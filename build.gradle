@@ -28,6 +28,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.10.1'
+	implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
+//	implementation 'org.seleniumhq.selenium:selenium-devtools-v86:4.8.3'
+	implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.6.2'
 }
 
 tasks.named('bootBuildImage') {
